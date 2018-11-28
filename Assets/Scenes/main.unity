@@ -302,6 +302,7 @@ Prefab:
     - target: {fileID: 224228397336019744, guid: 3fb91ac0429b8412dbeebbaca6f41708,
         type: 2}
       propertyPath: m_AnchorMax.y
+<<<<<<< HEAD
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224228397336019744, guid: 3fb91ac0429b8412dbeebbaca6f41708,
@@ -312,6 +313,8 @@ Prefab:
     - target: {fileID: 224228397336019744, guid: 3fb91ac0429b8412dbeebbaca6f41708,
         type: 2}
       propertyPath: m_Pivot.y
+=======
+>>>>>>> 1313a608ca8631b839fd8dfcc1c304822cf49b8e
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

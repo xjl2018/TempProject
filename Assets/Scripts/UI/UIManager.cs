@@ -105,6 +105,10 @@ public class UIManager
 
     public void SetLeftPlayerFood(FoodBase food)
     {
+<<<<<<< HEAD
+=======
+        Debug.Log("set food");
+>>>>>>> 1313a608ca8631b839fd8dfcc1c304822cf49b8e
         leftFood.text = food.foodName;
     }
 
