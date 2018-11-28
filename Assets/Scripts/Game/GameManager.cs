@@ -17,6 +17,18 @@ public class GameManager : MonoBehaviour
     private Dictionary<GameStateEnum, GameStateBase> gameStateList = new Dictionary<GameStateEnum, GameStateBase>();
 
     public int currentLevel = 1;  //当前关卡等级
+
+    private int _currentScore = 0;
+    public int CurrentScore
+    {
+        get { return _currentScore; }
+        set
+        {
+            _currentScore = value;
+            UIManager.Instance.SetScore();
+        }
+    }
+
     void Awake()
     {
         _instance = this;

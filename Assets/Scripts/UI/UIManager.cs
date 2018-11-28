@@ -31,6 +31,10 @@ public class UIManager
 
     public GameObject foodTemplate;
 
+    public PausePanelView pausePanelView;
+
+    Text score;
+
     public void Init()
     {
         uiRoot = GameObject.Find("Root").transform;
@@ -51,6 +55,11 @@ public class UIManager
 
         leftPlayer = uiRoot.Find("mainGamePanel/leftPlayer");
         rightPlayer = uiRoot.Find("mainGamePanel/rightPlayer");
+
+        score = uiRoot.Find("mainGamePanel/score").GetComponent<Text>();
+
+        pausePanelView = uiRoot.Find("pausePanel").GetComponent<PausePanelView>();
+
     }
 
     private void OnStartBtn()
@@ -96,12 +105,21 @@ public class UIManager
 
     public void SetLeftPlayerFood(FoodBase food)
     {
-        Debug.Log("set food");
         leftFood.text = food.foodName;
     }
 
     public void SetRightPlayerFood(FoodBase food)
     {
         rightFood.text = food.foodName;
+    }
+
+    public void SetScore()
+    {
+        score.text = GameManager.Instance.CurrentScore.ToString();
+    }
+
+    public void SetPausePanelVisible(bool isShow)
+    {
+        pausePanelView.SetVisible(isShow);
     }
 }

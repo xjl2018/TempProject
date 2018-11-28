@@ -74,6 +74,7 @@
      <Compile Include="Assets\Scripts\Player\PlayerManager.cs" />
      <Compile Include="Assets\Scripts\Player\Rabbit.cs" />
      <Compile Include="Assets\Scripts\Player\RabbitFactory.cs" />
+     <Compile Include="Assets\Scripts\UI\PausePanelView.cs" />
      <Compile Include="Assets\Scripts\UI\UIManager.cs" />
  <Reference Include="UnityEngine.CoreModule">
  <HintPath>D:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>

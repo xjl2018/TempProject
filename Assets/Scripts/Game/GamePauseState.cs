@@ -11,6 +11,7 @@ public class GamePauseState : GameStateBase
     override public void Enter()
     {
         base.Enter();
+        UIManager.Instance.SetPausePanelVisible(true);
     }
 
     override public void UpdateProcess()
@@ -21,5 +22,6 @@ public class GamePauseState : GameStateBase
     override public void Exit()
     {
         base.Exit();
+        UIManager.Instance.SetPausePanelVisible(false);
     }
 }

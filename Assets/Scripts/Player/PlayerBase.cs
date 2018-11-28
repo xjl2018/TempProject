@@ -78,6 +78,7 @@ public abstract class PlayerBase
             return;
         }
         score += 2;
+        GameManager.Instance.CurrentScore += 2;
         FoodManager.Instance.CollectFood(food);
 
         Debug.Log(this.GetType().Name + " eat " + food.foodName);
